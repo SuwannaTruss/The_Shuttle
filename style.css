@@ -97,13 +97,15 @@ body {
     padding: 0px 0px;
 }
 
-/* For all content sections */
-
-/* section {
+.value {
     width: 100%;
     padding: 15px;
-} */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* For all content sections */
 h1 {
     background-color: #003755;
     color: white;
@@ -127,8 +129,6 @@ ol, p{
 
 .info_img {
     width: 80%;
-    padding: 10px 5% 20px 12%;
-    justify-content: center;
 }
 
 /* Hide the images by default */
