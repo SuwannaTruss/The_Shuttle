@@ -128,7 +128,7 @@ ol, p{
 }
 
 .info_img {
-    width: 80%;
+    max-width: 1000px;
 }
 
 /* Hide the images by default */
