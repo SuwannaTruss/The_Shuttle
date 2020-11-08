@@ -1,0 +1,244 @@
+/* Page's generic style */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased; /*to fix white text on dark bg*/
+    color: #003755;
+}
+
+/* mobile first styles */
+.header {              /* total 3 items in this .header flex container */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    padding: 0px 10px 0px 0px;
+}
+
+.header_logo {         /* 1st item in .header flex container */
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    justify-items: top;
+    /* background-color:#01cbe1; */
+    padding: 0px 0px 0px 25px; 
+}
+.logo_img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    /* border-radius: 50%; */
+}
+/* .logo_title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 0px 0px 0px;
+} */
+
+.header_nav {           /* 2nd item in .header flex container. This needs to change for device responsive.*/  
+    padding: 0px 10px;
+    flex-grow: 2;
+}
+.header_navList {
+    display: flex;
+    justify-content: flex-start;
+}
+.header_navItem {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px;
+}
+.header_navLink {
+    text-decoration: none;
+    color: #003755;
+    font-weight: bold;
+}
+.header_navLink:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #003755;
+}
+
+.header_navButton {         /* 3rd item in .header flex container */  
+    background-color: #003755;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* headerContent container for image and text - size should be responsive to all devices*/
+.headerContent_img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    padding: 0px;
+}
+.headerContent {
+    position: relative;
+    text-align: left;
+    /* color:white; */
+    /* font-size: 3vw; */
+
+}
+.headerContent_bottom-left {
+    position: absolute;
+    bottom: 8%;
+    left: 3%;
+    color:white;
+}
+.header_text {
+    color:white; 
+    font-size: 2.6vw;
+    padding: 0px 0px;
+}
+
+/* For all content sections */
+
+/* section {
+    width: 100%;
+    padding: 15px;
+} */
+
+h1 {
+    background-color: #003755;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 10px 20%;
+    font-weight: bold;
+}
+
+ol, p{
+    font-size: 18px;
+    padding: 15px 20%;
+    line-height: 1.5em;
+}
+
+.info_img {
+    padding: 15px 10%;
+    justify-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    /* padding: 0px 20%; */
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+  }
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #003755;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #003755;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/* footer  - allow text wrap for reponsive*/
+.footer_text {
+    font-size: 15px;
+    background-color: #003755;
+    color: white;
+    padding: 2px 15px;
+}

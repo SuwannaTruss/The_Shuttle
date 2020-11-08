@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Marine Tech Hackathon Landing Page</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Marine Tech Hackathon">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Suwanna Truss">
+</head>
+<body>
+    <header class="header">
+        <a class="header_logo" href="#">
+            <img class="logo_img" src="logo.jpg"></a>
+<!--         <a class="header_logo" href="#">THE
+            <span class="logo_title">SHUTTLE</span></a> -->
+        <nav class="header_nav">
+            <ul class="header_navList">
+                <li class="header_navItem">
+                    <a class="header_navLink" href="#product"><span>PRODUCT</span></a> 
+                </li>
+                <li class="header_navItem">
+                    <a class="header_navLink" href="#value"><span>VALUE</span></a> 
+                </li>
+                <li class="header_navItem">
+                    <a class="header_navLink" href="#partner"><span>PARTNERS</span></a> 
+                </li>
+                <li class="header_navItem">
+                    <a class="header_navLink" href="#about"><span>ABOUT</span></a> 
+                </li>
+            </ul>
+        </nav>    
+        <button class="header_navButton"><span>SUPPORT US</span></button>
+    </header>
+    <main>
+        <div class="headerContent">
+            <img class="headerContent_img" src="OpenCleanup_patch_narrow.png" alt="">
+            <div class="headerContent_bottom-left">
+                <p class="header_text">Bring Renewable Energy </p>
+                <p class="header_text">to Ocean Cleaning</p>
+            </div>  
+        </div>
+    <section class="product" id="product">
+        <h1>PRODUCT PROTOTYPE</h1>
+        <p>The SHUTTLE is a state of the art device that will sustainably remove plastic particles from our oceans. By using solar power, GPS, sensors and wireless charging, the SHUTTLE can be placed offshore in a desired location and will take care of the rest itself. By inputting GPS coordinates, the SHUTTLE travels between the two points collecting plastic along the way, before depositing them in a central bin. When enough plastic has been transported, local operators will be notified for collection, enabling the SHUTTLE to run continuously.
+        </p>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="Img_Bin.png" style="width:100%">
+                <div class="text">Bin</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Img_Docking Boat.png" style="width:100%">
+                <div class="text">Docking Boat</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="Img_Section view.png" style="width:100%">
+                <div class="text">Section View</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="Img_Section View isometric.png" style="width:100%">
+                <div class="text">Section View isometric</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Img_Top view.png" style="width:100%">
+                <div class="text">Top View</div>
+            </div>
+  
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <section class="value" id="value">
+        <h1>VALUE PROPOSITION</h1>
+        <ol>
+            <li>1. Striving for a cleaner future using sustainable, renewable energy sources</li>
+            <li>2. Focusing on self-sustaining, reliable, ocean-free ocean cleaning</li>
+            <li>3. Collaboration with other companies and non-profit organisations</li>
+            <li>4. Reduce ocean plastic quantities quickly and efficiently</li>
+            <li>5. Reduce emission usage in pollution prevention schemes</li>
+        </ol>
+        <img class="info_img" src="design_system_comparison.png" alt="" srcset="">
+    </section>
+
+    <section class="partner" id="partner"> 
+        <h1>PARTNERS</h1>
+        <h2>THE OCEAN CLEANUP:</h2>
+        <p>By possessing the ability to hold 50m^3 of trash, the interceptor provided a valuable new way of stopping oceanic plastic pollution: Before it can happen. By using this idea, and applying it to the oceans, removing plastic pollution becomes more viable.</p>
+        <h2>OCEANS OF ENERGY:</h2>
+        <p>Developers of the worlds first, offshore floating solar farm, Oceans of Energy revolutionised the field of renewable energy. Using their advanced technology and applying it to our project will provide a unique way of mitigating oceanic plastic pollution.</p>
+        <h2>SEABIN PROJECT:</h2>
+        <p>This wonderful invention has removed more than 1 million kg of plastic from harbours and ports worldwide. By sitting just below surface level of the water, and using pumps to remove the water, the Sea Bin can run continuously, allowing constant removal to occur.</p>
+    </section>
+
+    <div class="sidebar"></div>
+
+    <footer class= "footer" id="about">
+        <p class="footer_text">Copyright &copy; Renewable Energy - The Shuttle</p>
+        <p class="footer_text">by Harry Collicutt, Ismael Pazmiño, Rikke Geelen, Suwanna Truss  </p>
+    </footer>
+    </main>
+</body>
+</html>
