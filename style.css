@@ -108,6 +108,7 @@ body {
 /* For all content sections */
 h1 {
     background-color: #003755;
+    width: 100%;
     color: white;
     font-size: 25px;
     font-weight: bold;
