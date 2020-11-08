@@ -97,7 +97,7 @@ body {
     padding: 0px 0px;
 }
 
-.value {
+.value, .partner{
     width: 100%;
     padding: 15px;
     display: flex;
