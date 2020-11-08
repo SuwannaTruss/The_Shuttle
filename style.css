@@ -126,7 +126,8 @@ ol, p{
 }
 
 .info_img {
-    padding: 15px 10%;
+    width: 80%;
+    padding: 10px 5% 20px 12%;
     justify-content: center;
 }
 
